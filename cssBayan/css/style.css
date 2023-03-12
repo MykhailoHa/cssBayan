@@ -43,7 +43,7 @@ h1 {
 
 h1 {
   font-size: 4em;
-  margin: 2vw 0;
+  margin: 1vw 0;
 }
 
 p {
@@ -89,6 +89,8 @@ p {
 .open-btn {
   transition: all .5s ease 0s;
 }
+@media(hover:hover) {
+
 
 .bayan-item:hover .open-btn {
   transform: rotate(45deg);
@@ -111,7 +113,7 @@ p {
 .bayan-wrapper:hover p {
   color: black;
 }
-
+}
 .bayan-input:checked~.bayan-inner {
   display: flex;
   justify-content: center;
