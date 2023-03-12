@@ -42,29 +42,28 @@ h1 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 4em;
   margin: 2vw 0;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 2.5em;
   color: blue;
-  transition: all .3s ease 0s;
+  transition: all .5s ease 0s;
 }
-
-
 
 .bayan-item--wrapper {
   display: flex;
+  flex-direction: column;
   border-top: solid grey;
-  padding: 2vw 0;
+  padding: 1vw 0;
   align-items: center;
   justify-content: space-between;
 
 }
 
 .bayan-item img {
-  width: 4%;
+  width: 3%;
 }
 
 .bayan-inner {
@@ -77,7 +76,7 @@ p {
 }
 
 .bayan-inner img {
-  margin: 2vw 0 2vw;
+  margin: 1vw 0 1vw;
   width: 50%;
   height: 20vw;
   object-fit: fill;
@@ -88,7 +87,7 @@ p {
 }
 
 .open-btn {
-  transition: all .3s ease 0s;
+  transition: all .5s ease 0s;
 }
 
 .bayan-item:hover .open-btn {
@@ -113,4 +112,52 @@ p {
   color: black;
 }
 
+.bayan-input:checked~.bayan-inner {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
 
+}
+
+.bayan-input:checked~ label .bayan-text {
+  color: black;
+}
+
+.bayan-input:checked ~ label .open-btn {
+  transform: rotate(45deg);
+}
+.bayan-input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.bayan-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width:1320px) { 
+h1 {
+  font-size: 2.5em;
+}
+p {
+  font-size: 1.5em;
+}
+}
+@media (max-width:700px) { 
+h1 {
+  font-size: 1.75em;
+}
+p {
+  font-size: 1em;
+}
+.bayan-label img {
+  width: 5%;
+}
+}
